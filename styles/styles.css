@@ -1,0 +1,168 @@
+/* global controls */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+header {
+  background-color: #0077C8;
+  height: 150px;
+}
+
+hr {
+  background-color: #0077C8;
+  height: 10px;
+  margin: 40px 0;
+}
+
+.art-1-image, .art-2-image {
+  position:-webkit-sticky; position:sticky; top:0;
+}
+
+/* hides the arrow icons and aside section from mobile */
+.icon-right, .icon-left, aside {
+  display: none;
+}
+
+header img {
+  height: 100%;
+  margin-top: 5px;
+}
+
+footer {
+  height: 500px;
+  margin-top: 40px;
+  background-color: #333333;
+  border-top: solid #0077C8 10px;
+}
+
+/* typography */
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  margin: 60px;
+  font-weight: 900;
+  padding: 32px 0;
+  line-height: 76px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin: 32px 60px 20px 60px;
+  line-height: 70px;
+  color: #333333;
+}
+
+/************ media query styles *************/
+
+@media screen and (min-width: 1025px) {
+
+header {
+  height: 50px;
+}
+
+header img {
+  height: 85%;
+}
+
+nav {
+  height: 45px;
+  background-color: #005995;
+  border-bottom: 4px #D64E5F solid;
+}
+
+article {
+  height: 100vh;
+  display: table;
+  width: 100%;
+}
+
+aside {
+  height: 280px;
+  background-color: gray;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.art-1-copy, .art-2-copy {
+  padding-top: 20px;
+  overflow: scroll;
+  width: 30%;
+  height: 100vh;
+}
+
+.art-1-copy {
+  float: right;
+}
+
+.art-2-copy {
+  float: left;
+}
+
+.art-1-image, .art-2-image {
+  width: 70%;
+}
+
+.art-1-image {
+  float: left;
+}
+
+.art-2-image {
+  float: right;
+}
+
+img {
+  height: 100vh;
+}
+
+.icon-right {
+  text-align: right;
+  margin-right: 40px;
+}
+
+.icon-right i {
+  color: #0077C8;
+}
+
+.icon-left {
+  color: #0077C8;
+  text-align: left;
+  margin-left: 40px;
+}
+
+/* displays the arrow icons and aside section for desktop */
+.icon-right, .icon-left, aside {
+  display: block;
+}
+
+/* typography */
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 44px;
+  margin: 0 30px 0 ;
+  font-weight: 900;
+  padding: 0px 0;
+  line-height: 45px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin: 18px 60px 18px 30px;
+  line-height: 30px;
+  color: #333333;
+}
+
+}
